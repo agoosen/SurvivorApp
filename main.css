@@ -1,0 +1,28 @@
+.playerPic {
+	width: 100px;
+    border-radius: 10px;
+}
+.name-container {
+	display: inline-block;
+	margin-left: 15px;
+	font-family:"alegreya";
+}
+.survivorName {
+	border: gray;
+    background-color: #f2f2f2;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contestant-container {
+	display:inline-block;
+	width:30%;
+}
+.contestantName {
+	color:#E55812;
+	padding:10px;
+	font-family:"alegreya";
+}
+.logo {
+	width:100px;
+}
