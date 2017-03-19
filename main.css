@@ -1,11 +1,15 @@
 .playerPic {
 	width: 100px;
+	height:64.19px;
     border-radius: 10px;
+    object-fit:cover;
 }
 .name-container {
 	display: inline-block;
 	margin-left: 15px;
 	font-family:"alegreya";
+	width:80px;
+    font-size: 24px;
 }
 .survivorName {
 	border: gray;
@@ -16,7 +20,11 @@
 }
 .contestant-container {
 	display:inline-block;
+	width:100%;
+}
+.contestant {
 	width:30%;
+	display:inline-block;
 }
 .contestantName {
 	color:#E55812;
@@ -24,5 +32,43 @@
 	font-family:"alegreya";
 }
 .logo {
-	width:100px;
+	width:150px;
+	margin:5px;
+	padding:10px;
+}
+.logo-container {
+	display:inline-block;
+}
+.display-inline {
+	display:inline;
+	margin:5px;
+	padding:5px;
+	font-family:"alegreya";
+}
+.score {
+
+    display: inline-block;
+    font-family: "alegreya";
+    margin: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-align: right;
+}
+.positive {
+	color:#15984F;
+}
+.negative {
+	color:#B93B3C;
+}
+h1 {
+	display:inline-block;
+	width: 205px;
+}
+.total {
+	color:black;
+	font-size:40px;
+}
+.icon-spacing {
+	display:inline-block;
+	margin-right: 5px;
 }

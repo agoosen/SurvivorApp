@@ -6,45 +6,167 @@
 		<script src="plugIns/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 		<link rel="stylesheet" href="plugIns/bootstrap-3.3.7-dist/css/bootstrap.css">
 		<link rel="stylesheet" href="main.css"/>
+		<script src="survivor.js"></script>
 		<script src="https://use.typekit.net/hjq5iuh.js"></script>
 			<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 
 	<body>
+		<div class="header"><img src="img/logo.png" class="logo"/><h1 class="display-inline">Survivor: Game Changers Draft</h1></div>
 		<div class="contestant-container">
-				<div class="contestantName">
-					<img src="img/logo.png" class="logo"/>
-					<h1>Anastasiya</h1>
-				</div>
+				<div class="contestant">
+					<div class="contestantName">
+						<h1>Anastasiya</h1>
+						<div class="score total">-1</div>
+					</div>
 
-				<div class="survivorName">
-					<img src="img/JT.jpg" class="playerPic img-container"/>
-					<h2 class="name-container">J T</h2>
-				</div>
+					<div class="survivorName">
+						<img src="img/JT.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">J T</h2>
+						<div class="score positive" id="jt-score">0</div>
+						<!-- Single button -->
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Action <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu">
+							    <li><a href="javascript:" onclick="confessional('jt-score')"><span class="glyphicon glyphicon-sunglasses icon-spacing"></span>Confessional</a></li>
+							    <li><a href="#"><span class="glyphicon glyphicon-thumbs-up icon-spacing"></span>Individual Immunity</a></li>
+							    <li><a href="#"><span class="glyphicon glyphicon-fire icon-spacing"></span>Hidden Immunity</a></li>
+							    <li><a href="#"><span class="glyphicon glyphicon-remove icon-spacing"></span>Eliminated</a></li>
+							    <li><a href="#"><span class="glyphicon glyphicon-trash icon-spacing"></span>Eliminated First</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li><a href="#"><span class="glyphicon glyphicon-gift icon-spacing"></span>Third Place</a></li>
+							    <li><a href="#"><span class="glyphicon glyphicon-flag icon-spacing"></span>Second Place</a></li>
+							    <li><a href="#"><span class="glyphicon glyphicon-education icon-spacing"></span>Sole Survivor</a></li>
+							  </ul>
+						</div>
+					</div>
 
-				<div class="survivorName">
-					<img src="img/Zeke.jpg" class="playerPic img-container"/>
-					<h2 class="name-container">Zeke</h2>
-				</div>
+					<div class="survivorName">
+						<img src="img/Zeke.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Zeke</h2>
+						<div class="score negative">-2</div>
+						<!-- Single button -->
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Action <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu">
+							    <li><a href="#">Action</a></li>
+							    <li><a href="#">Another action</a></li>
+							    <li><a href="#">Something else here</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li><a href="#">Separated link</a></li>
+							  </ul>
+						</div>
+					</div>
 
-				<div class="survivorName">
-					<img src="img/Sierra.jpg" class="playerPic img-container"/>
-					<h2 class="name-container">Sierra</h2>
-				</div>
+					<div class="survivorName">
+						<img src="img/Sierra.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Sierra</h2>
+					</div>
 
-				<div class="survivorName">
-					<img src="img/Troyzan.png" class="playerPic img-container"/>
-					<h2 class="name-container">Troyzan</h2>
-				</div>
+					<div class="survivorName">
+						<img src="img/Troyzan.png" class="playerPic img-container"/>
+						<h2 class="name-container">Troyzan</h2>
+					</div>
 
-				<div class="survivorName">
-					<img src="img/Tai.jpg" class="playerPic img-container"/>
-					<h2 class="name-container">Tai</h2>
-				</div>
+					<div class="survivorName">
+						<img src="img/Tai.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Tai</h2>
+					</div>
 
-				<div class="survivorName">
-					<img src="img/Caleb.png" class="playerPic img-container"/>
-					<h2 class="name-container">Caleb</h2>
+					<div class="survivorName">
+						<img src="img/Caleb.png" class="playerPic img-container"/>
+						<h2 class="name-container">Caleb</h2>
+					</div>
+				</div>
+				<div class="contestant">
+					<div class="contestantName">
+						<h1>Matt</h1>
+						<div class="score total">1</div>
+					</div>
+
+					<div class="survivorName">
+						<img src="img/Malcolm.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Malcolm</h2>
+						<div class="score">-2</div>
+						<!-- Single button -->
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Action <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu">
+							    <li><a href="#">Action</a></li>
+							    <li><a href="#">Another action</a></li>
+							    <li><a href="#">Something else here</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li><a href="#">Separated link</a></li>
+							  </ul>
+						</div>
+					</div>
+
+					<div class="survivorName">
+						<img src="img/Aubry.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Aubry</h2>
+					</div>
+
+					<div class="survivorName">
+						<img src="img/Sarah.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Sarah</h2>
+					</div>
+
+					<div class="survivorName">
+						<img src="img/Andrea.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Andrea</h2>
+					</div>
+
+					<div class="survivorName">
+						<img src="img/Hali.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Hali</h2>
+					</div>
+
+					<div class="survivorName">
+						<img src="img/Cirie.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Cirie</h2>
+					</div>
+				</div>
+				<div class="contestant">
+					<div class="contestantName">
+						<h1>Shadia</h1>
+						<div class="score total">0</div>
+					</div>
+
+					<div class="survivorName">
+						<img src="img/Ozzy.png" class="playerPic img-container"/>
+						<h2 class="name-container">Ozzy</h2>
+					</div>
+
+					<div class="survivorName">
+						<img src="img/Jeff.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Jeff</h2>
+					</div>
+
+					<div class="survivorName">
+						<img src="img/Sandra.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Sandra</h2>
+					</div>
+
+					<div class="survivorName">
+						<img src="img/Debbie.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Debbie</h2>
+					</div>
+
+					<div class="survivorName">
+						<img src="img/Mikayla.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Mikayla</h2>
+					</div>
+
+					<div class="survivorName">
+						<img src="img/Brad.jpg" class="playerPic img-container"/>
+						<h2 class="name-container">Brad</h2>
+					</div>
 				</div>
 	</div>
 
